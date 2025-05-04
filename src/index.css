@@ -97,7 +97,7 @@
   }
 
   .mk-title {
-    @apply font-mario bg-clip-text text-transparent bg-neon-glow bg-300% animate-shine;
+    @apply font-mario bg-clip-text text-transparent bg-neon-glow bg-[length:300%] animate-shine;
   }
 
   .mk-card {
