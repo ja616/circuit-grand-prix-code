@@ -6,7 +6,7 @@ import PowerUpsSection from '../components/PowerUpsSection';
 import ScheduleSection from '../components/ScheduleSection';
 import WhyJoinSection from '../components/WhyJoinSection';
 import SponsorsSection from '../components/SponsorsSection';
-import ContactSection from '../components/ContactSection';
+import LeaderboardSection from '../components/LeaderboardSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -17,10 +17,10 @@ const Index = () => {
         <HeroBanner />
         <MissionSection />
         <PowerUpsSection />
-        <WhyJoinSection />
         <ScheduleSection />
+        <WhyJoinSection />
+        <LeaderboardSection />
         <SponsorsSection />
-        <ContactSection />
       </main>
       <Footer />
     </div>

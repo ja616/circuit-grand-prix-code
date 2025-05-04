@@ -55,7 +55,7 @@ const scheduleEvents: ScheduleEvent[] = [
 
 const ScheduleSection = () => {
   return (
-    <section className="mk-section">
+    <section id="schedule" className="mk-section">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <div className="mb-2">📅</div>
