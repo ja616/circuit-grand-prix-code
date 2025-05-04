@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -45,8 +46,12 @@ const Header = () => {
     <header className="bg-gradient-to-r from-mk-purple to-mk-red text-white sticky top-0 z-50 shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-4">
-          <Link to="/" className="font-mario text-lg md:text-xl">
-            RAS IEEE SOP
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/d1c539da-d799-4e85-b9fb-ae156d444cbb.png" 
+              alt="RAS Logo" 
+              className="h-10 mr-2"
+            />
           </Link>
 
           {/* Mobile menu button */}

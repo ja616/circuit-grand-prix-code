@@ -8,13 +8,16 @@ const HeroBanner = () => {
 
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background with checkered pattern and overlay */}
-      <div className="absolute inset-0 bg-checkered-pattern bg-[length:20px_20px] opacity-10 z-0"></div>
-      <div className="absolute inset-0 bg-gradient-to-br from-mk-purple/90 to-mk-red/90 z-10"></div>
+      {/* Background with the uploaded Mario theme image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center z-0" 
+        style={{ backgroundImage: 'url("/lovable-uploads/d1c539da-d799-4e85-b9fb-ae156d444cbb.png")' }}
+      ></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-mk-purple/70 to-mk-red/70 z-10"></div>
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-20 text-center py-16">
-        <h1 className="mk-title text-3xl md:text-5xl lg:text-7xl font-bold mb-6">
+        <h1 className="text-white text-3xl md:text-5xl lg:text-7xl font-bold mb-6 font-mario">
           SOP Robotics & IoT Track 2025
         </h1>
         

@@ -42,12 +42,12 @@ const leaderboardEntries: LeaderboardEntry[] = [
 
 const LeaderboardSection = () => {
   return (
-    <section id="leaderboard" className="mk-section bg-gradient-to-br from-mk-purple/10 to-mk-red/10">
+    <section id="leaderboard" className="mk-section bg-gradient-to-br from-gray-900 to-mk-purple-dark text-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <div className="mb-2">🏆</div>
-          <h2 className="mk-title text-3xl md:text-4xl lg:text-5xl font-bold">Leaderboard Titles</h2>
-          <p className="text-xl mt-4 font-racing text-gray-700">
+          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold font-mario">Leaderboard Titles</h2>
+          <p className="text-xl mt-4 font-racing text-gray-200">
             Race to the top! Claim your championship title and eternal bot glory!
           </p>
         </div>
@@ -56,19 +56,19 @@ const LeaderboardSection = () => {
           {leaderboardEntries.map((entry, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-mk-purple 
+              className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-6 border-l-4 border-mk-purple 
                        hover:shadow-xl hover:border-mk-red transition-all transform hover:-translate-y-1"
             >
               <div className="flex items-center mb-4">
                 {entry.icon}
-                <h3 className="ml-3 text-xl font-bold font-racing text-mk-purple-dark">{entry.title}</h3>
+                <h3 className="ml-3 text-xl font-bold font-racing text-white">{entry.title}</h3>
               </div>
-              <p className="text-gray-700">{entry.description}</p>
+              <p className="text-gray-200">{entry.description}</p>
               
               {/* Animated slot indicator */}
               <div className="mt-4 flex items-center">
-                <span className="text-gray-500 mr-2">Current Leader:</span>
-                <span className="font-bold animate-pulse">???</span>
+                <span className="text-gray-300 mr-2">Current Leader:</span>
+                <span className="font-bold animate-pulse text-yellow-300">???</span>
               </div>
             </div>
           ))}
@@ -76,7 +76,7 @@ const LeaderboardSection = () => {
         
         <div className="mt-10 text-center">
           <div className="mk-badge">Coming Soon</div>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-gray-300">
             The race is on! Leaderboard will update throughout the competition.
           </p>
         </div>

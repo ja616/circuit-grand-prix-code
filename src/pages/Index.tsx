@@ -18,8 +18,8 @@ const Index = () => {
         <MissionSection />
         <PowerUpsSection />
         <ScheduleSection />
-        <WhyJoinSection />
         <LeaderboardSection />
+        <WhyJoinSection />
         <SponsorsSection />
       </main>
       <Footer />
