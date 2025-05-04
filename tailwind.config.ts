@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,19 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Mario Kart Theme Colors
+				'mk-red': '#ea384c',
+				'mk-purple': {
+					DEFAULT: '#9b87f5',
+					dark: '#7E69AB',
+					light: '#D6BCFA'
+				},
+				'mk-white': '#FFFFFF',
+			},
+			fontFamily: {
+				'mario': ['"Press Start 2P"', 'cursive'],
+				'racing': ['"Racing Sans One"', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +97,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 10px rgba(155, 135, 245, 0.7), 0 0 20px rgba(155, 135, 245, 0.5)' 
+					},
+					'50%': { 
+						boxShadow: '0 0 15px rgba(155, 135, 245, 0.9), 0 0 30px rgba(155, 135, 245, 0.7)' 
+					}
+				},
+				'shine': {
+					'0%': { backgroundPosition: '200% center' },
+					'100%': { backgroundPosition: '-200% center' }
+				},
+				'move-right': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(10px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+				'shine': 'shine 3s linear infinite',
+				'move-right': 'move-right 0.5s ease-in-out infinite alternate'
+			},
+			backgroundImage: {
+				'checkered-pattern': 'repeating-conic-gradient(#FFFFFF 0% 25%, #000000 0% 50%)',
+				'race-gradient': 'linear-gradient(90deg, rgba(234, 56, 76, 0.8) 0%, rgba(155, 135, 245, 0.8) 100%)',
+				'neon-glow': 'linear-gradient(90deg, #9b87f5, #ea384c, #9b87f5)',
 			}
 		}
 	},

@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Racing+Sans+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,47 +38,32 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -97,5 +85,37 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Custom styles for Mario Kart theme */
+@layer components {
+  .mk-btn {
+    @apply font-racing bg-mk-red hover:bg-opacity-90 text-white rounded-full px-6 py-2 
+           transition-all shadow-lg hover:shadow-xl transform hover:scale-105 
+           border-2 border-white hover:border-mk-purple inline-block;
+  }
+
+  .mk-title {
+    @apply font-mario bg-clip-text text-transparent bg-neon-glow bg-300% animate-shine;
+  }
+
+  .mk-card {
+    @apply rounded-xl shadow-lg bg-white p-6 hover:shadow-xl transition-all 
+           border-2 border-mk-purple hover:border-mk-red transform hover:-translate-y-1;
+  }
+
+  .mk-mission-card {
+    @apply rounded-xl shadow-xl bg-gradient-to-br from-white to-gray-100 p-6 
+           border-l-4 border-mk-purple hover:border-mk-red transition-all;
+  }
+
+  .mk-section {
+    @apply py-12 px-4 md:px-6 lg:px-8;
+  }
+  
+  .mk-badge {
+    @apply inline-flex items-center justify-center rounded-full px-4 py-1 
+           bg-mk-purple text-white font-bold text-xs shadow-md;
   }
 }
