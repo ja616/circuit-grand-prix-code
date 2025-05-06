@@ -42,19 +42,17 @@ const powerUps: PowerUp[] = [
 
 const PowerUpsSection = () => {
   return (
-    <section className="mk-section bg-gradient-to-br from-gray-900 to-mk-purple-dark text-white">
-      <div className="container mx-auto">
+    <section className="bg-[#1e1e42] text-white py-16">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="mb-2">🔋</div>
-          <h2 className="mk-title text-3xl md:text-4xl lg:text-5xl font-bold">POWER-UPS</h2>
+          <h2 className="text-[#9370ff] text-3xl md:text-4xl font-mario uppercase">POWER-UPS</h2>
           <p className="text-xl mt-4 font-racing">
             Skills & Tools You'll Learn
           </p>
         </div>
 
         <div className="mb-12">
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-xl">
-            <h3 className="font-mario text-2xl mb-4 text-center">🎮 Welcome to the Race</h3>
+          <div className="bg-[#2d2d5d] rounded-xl p-6 shadow-xl">
             <p className="text-lg text-center max-w-3xl mx-auto">
               "This is no ordinary workshop. It's a hands-on, high-voltage engineering showdown! 
               Build bots, battle it out, and level up with every round. Choose your mission, 
@@ -64,10 +62,10 @@ const PowerUpsSection = () => {
         </div>
 
         <div className="mb-6">
-          <h3 className="font-racing text-2xl mb-6 text-center">⚡ Power-Up Garage — Your Engineering Boosts</h3>
+          <h3 className="font-mario text-2xl mb-6 text-center text-[#ff9cff]">⚡ Power-Up Garage — Your Engineering Boosts</h3>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {powerUps.map((powerUp, index) => (
             <PowerUpCard key={index} powerUp={powerUp} />
           ))}
@@ -82,15 +80,15 @@ const PowerUpCard = ({ powerUp }: { powerUp: PowerUp }) => {
 
   return (
     <div 
-      className={`bg-gradient-to-br from-white/10 to-transparent backdrop-blur-sm rounded-xl p-6 
-                 border-2 border-white/20 shadow-lg transition-all duration-300
-                 ${isHovered ? 'transform -translate-y-2 shadow-xl border-mk-red/50' : ''}`}
+      className={`bg-[#2d2d5d] rounded-lg p-6 
+                 border border-[#433e7a] shadow-lg transition-all duration-300
+                 ${isHovered ? 'transform -translate-y-2 shadow-xl' : ''}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="text-4xl mb-4">{powerUp.icon}</div>
-      <h4 className="text-xl font-bold font-racing mb-3">{powerUp.name}</h4>
-      <p className={`transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-70'}`}>
+      <h4 className="text-xl font-bold font-racing mb-3 text-[#ff9cff]">{powerUp.name}</h4>
+      <p className={`transition-opacity duration-300 text-gray-300 ${isHovered ? 'opacity-100' : 'opacity-70'}`}>
         {powerUp.description}
       </p>
     </div>

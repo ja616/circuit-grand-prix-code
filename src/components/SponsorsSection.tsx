@@ -33,44 +33,43 @@ const sponsors: Sponsor[] = [
 
 const SponsorsSection = () => {
   return (
-    <section className="mk-section bg-gradient-to-br from-mk-purple/10 to-mk-red/10">
-      <div className="container mx-auto">
+    <section className="py-16 bg-[#fff6f9]">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="mb-2">🏆</div>
-          <h2 className="mk-title text-3xl md:text-4xl lg:text-5xl font-bold">Our Sponsors</h2>
+          <h2 className="text-[#8556f3] text-3xl md:text-4xl font-mario uppercase">Our Sponsors</h2>
           <p className="text-xl mt-4 font-racing text-gray-700">
             The power-ups behind our racing tracks!
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="flex flex-wrap justify-center mb-8">
           <SponsorTier 
-            title="💎 Diamond Tier – Ultimate Boosters" 
+            title="💎 Diamond Tier" 
             tier="diamond"
             sponsors={sponsors.filter(sponsor => sponsor.tier === 'diamond')}
           />
           
           <SponsorTier 
-            title="🥇 Gold Tier – Turbo Supporters" 
+            title="🥇 Gold Tier" 
             tier="gold"
             sponsors={sponsors.filter(sponsor => sponsor.tier === 'gold')}
           />
           
           <SponsorTier 
-            title="🥈 Silver Tier – Speed Enhancers" 
+            title="🥈 Silver Tier" 
             tier="silver"
             sponsors={sponsors.filter(sponsor => sponsor.tier === 'silver')}
           />
           
           <SponsorTier 
-            title="🥉 Bronze Tier – Builders in the Shadows" 
+            title="🥉 Bronze Tier" 
             tier="bronze"
             sponsors={sponsors.filter(sponsor => sponsor.tier === 'bronze')}
           />
         </div>
 
         <div className="text-center mt-12">
-          <a href="/become-sponsor" className="mk-btn">
+          <a href="/become-sponsor" className="bg-[#8556f3] text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all font-mario">
             🚀 Become a Sponsor
           </a>
         </div>
@@ -89,38 +88,38 @@ const SponsorTier = ({ title, tier, sponsors }: SponsorTierProps) => {
   const getTierStyles = () => {
     switch(tier) {
       case 'diamond':
-        return 'bg-white shadow-[0_0_20px_rgba(255,255,255,0.7)] border-white';
+        return 'border-[#b0cefb]';
       case 'gold':
-        return 'bg-yellow-50 shadow-[0_0_15px_rgba(234,179,8,0.5)] border-yellow-300';
+        return 'border-yellow-300';
       case 'silver':
-        return 'bg-gray-50 shadow-[0_0_10px_rgba(148,163,184,0.5)] border-gray-300';
+        return 'border-gray-300';
       case 'bronze':
-        return 'bg-orange-50 shadow-[0_0_5px_rgba(180,83,9,0.4)] border-orange-200';
+        return 'border-orange-200';
     }
   };
 
   const getLogoSize = () => {
     switch(tier) {
       case 'diamond':
-        return 'w-64 h-64';
-      case 'gold':
         return 'w-48 h-48';
-      case 'silver':
+      case 'gold':
         return 'w-40 h-40';
-      case 'bronze':
+      case 'silver':
         return 'w-32 h-32';
+      case 'bronze':
+        return 'w-24 h-24';
     }
   };
 
   return (
-    <div className="text-center">
-      <h3 className="text-2xl font-racing mb-6">{title}</h3>
+    <div className="text-center px-4">
+      <h3 className="text-xl font-mario mb-4">{title}</h3>
       
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-6">
         {sponsors.map((sponsor, index) => (
           <div 
             key={index}
-            className={`p-6 rounded-xl border-2 ${getTierStyles()} transition-all hover:scale-105`}
+            className={`p-4 rounded-lg border-2 ${getTierStyles()} bg-white shadow-md transition-all hover:scale-105`}
           >
             <img 
               src={sponsor.logo} 

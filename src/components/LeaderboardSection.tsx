@@ -42,30 +42,27 @@ const leaderboardEntries: LeaderboardEntry[] = [
 
 const LeaderboardSection = () => {
   return (
-    <section id="leaderboard" className="mk-section bg-gradient-to-br from-gray-950 to-black text-white py-16">
-      <div className="container mx-auto">
+    <section id="leaderboard" className="py-16 bg-[#1e1e42] text-white">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="mb-2">🏆</div>
-          <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold font-mario">Leaderboard Titles</h2>
+          <h2 className="text-[#b095ff] text-3xl md:text-4xl font-mario uppercase">Leaderboard Titles</h2>
           <p className="text-xl mt-4 font-racing text-gray-200">
             Race to the top! Claim your championship title and eternal bot glory!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {leaderboardEntries.map((entry, index) => (
             <div 
               key={index} 
-              className="bg-white/5 backdrop-blur-sm rounded-xl shadow-lg p-6 border-l-4 border-mk-purple 
-                       hover:shadow-xl hover:border-mk-red transition-all transform hover:-translate-y-1"
+              className="bg-white/5 backdrop-blur-sm rounded-lg shadow-lg p-6 border border-[#4a4a7a]"
             >
               <div className="flex items-center mb-4">
                 {entry.icon}
-                <h3 className="ml-3 text-xl font-bold font-racing text-white">{entry.title}</h3>
+                <h3 className="ml-3 text-xl font-bold text-white">{entry.title}</h3>
               </div>
               <p className="text-gray-300">{entry.description}</p>
               
-              {/* Animated slot indicator */}
               <div className="mt-4 flex items-center">
                 <span className="text-gray-300 mr-2">Current Leader:</span>
                 <span className="font-bold text-yellow-300">???</span>
@@ -75,7 +72,6 @@ const LeaderboardSection = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <div className="mk-badge">Coming Soon</div>
           <p className="mt-4 text-gray-300">
             The race is on! Leaderboard will update throughout the competition.
           </p>

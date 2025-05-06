@@ -3,16 +3,16 @@ import { CircleCheck } from 'lucide-react';
 
 const MissionSection = () => {
   return (
-    <section className="mk-section bg-gradient-to-br from-white to-gray-50">
-      <div className="container mx-auto">
+    <section className="py-16 bg-[#f5e6ff] relative">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mk-title text-3xl md:text-4xl lg:text-5xl font-bold">Mission Mode: Robotics Grand Tour</h2>
-          <p className="text-xl mt-4 font-racing text-gray-700">
+          <h2 className="text-[#d33fa6] text-3xl md:text-4xl font-mario uppercase">Mission Mode: Robotics<br/>Grand Tour</h2>
+          <p className="text-lg mt-4 font-racing text-gray-700">
             "Make your bot. Complete the missions. Unlock every skill. Become the ultimate Robotics Grandmaster!"
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <MissionCard 
             title="Gesture-Controlled RC Car Build"
             tagline="Control with a flick. Zoom with precision."
@@ -63,10 +63,10 @@ const MissionCard = ({
   buttonText 
 }: MissionCardProps) => {
   return (
-    <div className="mk-mission-card h-full flex flex-col justify-between">
+    <div className="bg-white rounded-lg shadow-md p-6 border-2 border-gray-200 flex flex-col justify-between">
       <div>
         <div className="text-4xl mb-4">{iconEmoji}</div>
-        <h3 className="text-2xl font-bold font-racing text-mk-purple-dark mb-2">{title}</h3>
+        <h3 className="text-xl font-bold text-[#d33fa6] mb-2">{title}</h3>
         <p className="italic text-lg mb-4">"{tagline}"</p>
         <p className="text-gray-700 mb-4">{description}</p>
         
@@ -75,7 +75,7 @@ const MissionCard = ({
           <ul className="space-y-2">
             {skills.map((skill, index) => (
               <li key={index} className="flex items-center">
-                <CircleCheck size={18} className="text-mk-purple mr-2" />
+                <CircleCheck size={18} className="text-[#d33fa6] mr-2" />
                 <span>{skill}</span>
               </li>
             ))}
@@ -83,7 +83,7 @@ const MissionCard = ({
         </div>
       </div>
       
-      <button className="mk-btn w-full">
+      <button className="bg-[#d33fa6] hover:bg-opacity-90 text-white rounded-lg px-4 py-2 w-full font-mario">
         {buttonText}
       </button>
     </div>

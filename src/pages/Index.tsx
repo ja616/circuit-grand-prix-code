@@ -4,9 +4,9 @@ import HeroBanner from '../components/HeroBanner';
 import MissionSection from '../components/MissionSection';
 import PowerUpsSection from '../components/PowerUpsSection';
 import ScheduleSection from '../components/ScheduleSection';
+import LeaderboardSection from '../components/LeaderboardSection';
 import WhyJoinSection from '../components/WhyJoinSection';
 import SponsorsSection from '../components/SponsorsSection';
-import LeaderboardSection from '../components/LeaderboardSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
