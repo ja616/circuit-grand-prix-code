@@ -6,8 +6,8 @@ const MissionSection = () => {
     <section className="py-16 bg-[#f5e6ff] relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-[#d33fa6] text-3xl md:text-4xl font-mario uppercase">Mission Mode: Robotics<br/>Grand Tour</h2>
-          <p className="text-lg mt-4 font-racing text-gray-700">
+          <h2 className="text-[#d33fa6] text-3xl md:text-4xl font-bold uppercase">Mission Mode: Robotics<br/>Grand Tour</h2>
+          <p className="text-lg mt-4 text-gray-700">
             "Make your bot. Complete the missions. Unlock every skill. Become the ultimate Robotics Grandmaster!"
           </p>
         </div>
@@ -65,7 +65,7 @@ const MissionCard = ({
         <p className="italic text-lg mb-4">"{tagline}"</p>
         <p className="text-gray-700 mb-4">{description}</p>
         
-        <div className="mb-6">
+        <div className="mb-4">
           <h4 className="text-sm uppercase font-bold text-gray-500 mb-2">Skills Earned:</h4>
           <ul className="space-y-2">
             {skills.map((skill, index) => (
