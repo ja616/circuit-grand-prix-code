@@ -10,24 +10,14 @@ const HeroBanner = () => {
     <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background with uploaded image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center z-0 bg-[#8dbaff]" 
-        style={{ backgroundImage: 'url("/lovable-uploads/dff05475-41e4-4907-b45a-eecdb3b6b471.png")' }}
+        className="absolute inset-0 bg-cover bg-center z-0" 
+        style={{ backgroundImage: 'url("/lovable-uploads/21a63c10-e17f-4c07-a561-ad5eeb85c0f9.png")' }}
       ></div>
       
       <div className="container mx-auto px-4 relative z-20 text-center py-16 flex flex-col items-center">
-        <div className="flex justify-center mb-8">
-          <div className="bg-[#ffb800] border-4 border-black h-40 w-40 flex items-center justify-center">
-            <span className="text-black text-7xl font-mario">?</span>
-          </div>
-        </div>
-        
-        <p className="text-black text-xl md:text-2xl max-w-3xl mx-auto mb-8 font-racing">
-          Start your coding adventure to the future of technology!
-        </p>
-        
         <CountdownTimer targetDate={eventDate} />
         
-        <h1 className="text-black text-3xl md:text-5xl lg:text-7xl font-bold font-mario mb-6 uppercase">
+        <h1 className="text-black text-3xl md:text-5xl lg:text-7xl font-bold font-mario mb-6 uppercase mt-8">
           Summer of Projects
         </h1>
         

@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-2 px-4">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/d1c539da-d799-4e85-b9fb-ae156d444cbb.png" 
+              src="/lovable-uploads/275d2a89-16d4-4c5f-81d6-c0b6f9f1f9e7.png" 
               alt="SOP Logo" 
               className="h-10"
             />
@@ -33,18 +33,18 @@ const Header = () => {
           {/* Desktop navigation */}
           <nav className="hidden md:flex space-x-6 items-center">
             <Link to="/" className="font-mario text-white hover:text-yellow-200 transition-colors">HOME</Link>
-            <Link to="/about" className="font-mario text-white hover:text-yellow-200 transition-colors">ABOUT</Link>
-            <Link to="/events" className="font-mario text-white hover:text-yellow-200 transition-colors">EVENTS</Link>
             <Link to="/schedule" className="font-mario text-white hover:text-yellow-200 transition-colors">SCHEDULE</Link>
-            <Link to="/team" className="font-mario text-white hover:text-yellow-200 transition-colors">TEAM</Link>
-            <Link to="/faq" className="font-mario text-white hover:text-yellow-200 transition-colors">FAQ</Link>
+            <Link to="/mission" className="font-mario text-white hover:text-yellow-200 transition-colors">MISSION</Link>
+            <Link to="/leaderboard" className="font-mario text-white hover:text-yellow-200 transition-colors">LEADERBOARD</Link>
+            <Link to="/highlights" className="font-mario text-white hover:text-yellow-200 transition-colors">HIGHLIGHTS</Link>
+            <Link to="/crew" className="font-mario text-white hover:text-yellow-200 transition-colors">CREW</Link>
             <a 
               href="https://unstop.com" 
               target="_blank" 
               rel="noreferrer"
               className="bg-white text-[#ff3e3e] px-4 py-1 rounded-lg hover:bg-yellow-200 transition-colors font-mario"
             >
-              REGISTER
+              REGISTER NOW
             </a>
           </nav>
         </div>
@@ -54,11 +54,11 @@ const Header = () => {
           <nav className="md:hidden py-4 bg-[#8e44ad] rounded-b-lg">
             <div className="flex flex-col space-y-4 items-center">
               <Link to="/" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>HOME</Link>
-              <Link to="/about" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>ABOUT</Link>
-              <Link to="/events" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>EVENTS</Link>
               <Link to="/schedule" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>SCHEDULE</Link>
-              <Link to="/team" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>TEAM</Link>
-              <Link to="/faq" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>FAQ</Link>
+              <Link to="/mission" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>MISSION</Link>
+              <Link to="/leaderboard" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>LEADERBOARD</Link>
+              <Link to="/highlights" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>HIGHLIGHTS</Link>
+              <Link to="/crew" className="font-mario text-white hover:text-yellow-200 w-full text-center py-2" onClick={toggleMenu}>CREW</Link>
               <a 
                 href="https://unstop.com" 
                 target="_blank" 
@@ -66,7 +66,7 @@ const Header = () => {
                 className="bg-white text-[#ff3e3e] px-6 py-2 rounded-lg hover:bg-yellow-200 transition-colors font-mario mb-2"
                 onClick={toggleMenu}
               >
-                REGISTER
+                REGISTER NOW
               </a>
             </div>
           </nav>

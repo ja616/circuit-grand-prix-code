@@ -67,12 +67,6 @@ const SponsorsSection = () => {
             sponsors={sponsors.filter(sponsor => sponsor.tier === 'bronze')}
           />
         </div>
-
-        <div className="text-center mt-12">
-          <a href="/become-sponsor" className="bg-[#8556f3] text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all font-mario">
-            🚀 Become a Sponsor
-          </a>
-        </div>
       </div>
     </section>
   );

@@ -19,7 +19,6 @@ const MissionSection = () => {
             iconEmoji="🚗"
             description="Learn motor and sensor integration to build a gesture-controlled RC car. Assemble hardware, write control code, and race wirelessly."
             skills={["Code Kart Nitro", "WiFi Warp Drive", "Solder Banana"]}
-            buttonText="⚡ Enter RC Circuit"
           />
           
           <MissionCard 
@@ -28,7 +27,6 @@ const MissionSection = () => {
             iconEmoji="⚽"
             description="Build autonomous soccer bots to score on a custom field. Program them to sense, track, and shoot — all without human control. Compete in RoboSoccer League matches."
             skills={["Sensor Seeker Shell", "Code Kart Nitro", "Stratastar Badge"]}
-            buttonText="⚽ Join the League"
           />
           
           <MissionCard 
@@ -37,7 +35,6 @@ const MissionSection = () => {
             iconEmoji="🏁"
             description="Design high-torque bots for raw strength battles. Optimize motor power, traction grip, and weight distribution to overpower opponents in the ultimate Tug of War showdown."
             skills={["Grip Master Tires", "Solder Banana", "Stratastar Badge"]}
-            buttonText="🔥 Claim the Tug Throne"
           />
         </div>
       </div>
@@ -51,7 +48,6 @@ interface MissionCardProps {
   iconEmoji: string;
   description: string;
   skills: string[];
-  buttonText: string;
 }
 
 const MissionCard = ({ 
@@ -59,8 +55,7 @@ const MissionCard = ({
   tagline, 
   iconEmoji, 
   description, 
-  skills, 
-  buttonText 
+  skills
 }: MissionCardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-md p-6 border-2 border-gray-200 flex flex-col justify-between">
@@ -82,10 +77,6 @@ const MissionCard = ({
           </ul>
         </div>
       </div>
-      
-      <button className="bg-[#d33fa6] hover:bg-opacity-90 text-white rounded-lg px-4 py-2 w-full font-mario">
-        {buttonText}
-      </button>
     </div>
   );
 };
