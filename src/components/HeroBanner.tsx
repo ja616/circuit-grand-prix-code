@@ -7,8 +7,8 @@ const HeroBanner = () => {
   const eventDate = '2025-05-17T09:00:00';
 
   return (
-    <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-      {/* Background with the uploaded Mario theme image */}
+    <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      {/* Background with the uploaded image */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ backgroundImage: 'url("/lovable-uploads/d1c539da-d799-4e85-b9fb-ae156d444cbb.png")' }}
@@ -17,7 +17,7 @@ const HeroBanner = () => {
       
       {/* Content */}
       <div className="container mx-auto px-4 relative z-20 text-center py-16">
-        <h1 className="text-white text-3xl md:text-5xl lg:text-7xl font-bold mb-6 font-mario">
+        <h1 className="text-white text-3xl md:text-5xl lg:text-7xl font-bold font-mario mb-6">
           SOP Robotics & IoT Track 2025
         </h1>
         

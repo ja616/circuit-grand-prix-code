@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-950 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -15,9 +15,9 @@ const Footer = () => {
             <h3 className="font-racing text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-              <li><a href="/schedule" className="text-gray-300 hover:text-white transition-colors">Schedule</a></li>
-              <li><a href="/tracks" className="text-gray-300 hover:text-white transition-colors">Tracks</a></li>
-              <li><a href="/leaderboard" className="text-gray-300 hover:text-white transition-colors">Leaderboard</a></li>
+              <li><a href="#schedule" className="text-gray-300 hover:text-white transition-colors">Schedule</a></li>
+              <li><a href="#mission" className="text-gray-300 hover:text-white transition-colors">Tracks</a></li>
+              <li><a href="#leaderboard" className="text-gray-300 hover:text-white transition-colors">Leaderboard</a></li>
             </ul>
           </div>
           

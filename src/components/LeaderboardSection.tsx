@@ -42,7 +42,7 @@ const leaderboardEntries: LeaderboardEntry[] = [
 
 const LeaderboardSection = () => {
   return (
-    <section id="leaderboard" className="mk-section bg-gradient-to-br from-gray-900 to-mk-purple-dark text-white">
+    <section id="leaderboard" className="mk-section bg-gradient-to-br from-gray-950 to-black text-white py-16">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <div className="mb-2">🏆</div>
@@ -56,19 +56,19 @@ const LeaderboardSection = () => {
           {leaderboardEntries.map((entry, index) => (
             <div 
               key={index} 
-              className="bg-white/10 backdrop-blur-sm rounded-xl shadow-lg p-6 border-l-4 border-mk-purple 
+              className="bg-white/5 backdrop-blur-sm rounded-xl shadow-lg p-6 border-l-4 border-mk-purple 
                        hover:shadow-xl hover:border-mk-red transition-all transform hover:-translate-y-1"
             >
               <div className="flex items-center mb-4">
                 {entry.icon}
                 <h3 className="ml-3 text-xl font-bold font-racing text-white">{entry.title}</h3>
               </div>
-              <p className="text-gray-200">{entry.description}</p>
+              <p className="text-gray-300">{entry.description}</p>
               
               {/* Animated slot indicator */}
               <div className="mt-4 flex items-center">
                 <span className="text-gray-300 mr-2">Current Leader:</span>
-                <span className="font-bold animate-pulse text-yellow-300">???</span>
+                <span className="font-bold text-yellow-300">???</span>
               </div>
             </div>
           ))}

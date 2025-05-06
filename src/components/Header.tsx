@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -50,7 +49,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/d1c539da-d799-4e85-b9fb-ae156d444cbb.png" 
               alt="RAS Logo" 
-              className="h-10 mr-2"
+              className="h-10"
             />
           </Link>
 
