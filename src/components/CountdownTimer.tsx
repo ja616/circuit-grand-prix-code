@@ -38,21 +38,21 @@ const CountdownTimer = ({ targetDate }: CountdownTimerProps) => {
   }, [targetDate]);
 
   return (
-    <div className="flex justify-center gap-6 my-6">
+    <div className="flex justify-center gap-3 my-6">
       <TimeBlock value={timeLeft.days} label="DAYS" />
       <TimeBlock value={timeLeft.hours} label="HOURS" />
-      <TimeBlock value={timeLeft.minutes} label="MINS" />
-      <TimeBlock value={timeLeft.seconds} label="SECS" />
+      <TimeBlock value={timeLeft.minutes} label="MINUTES" />
+      <TimeBlock value={timeLeft.seconds} label="SECONDS" />
     </div>
   );
 };
 
 const TimeBlock = ({ value, label }: { value: number, label: string }) => (
   <div className="flex flex-col items-center">
-    <div className="bg-[#ff3e3e] text-white text-3xl md:text-4xl p-4 rounded-lg w-16 h-16 md:w-20 md:h-20 flex items-center justify-center shadow-lg font-bold">
+    <div className="bg-[#ff3e3e] text-white text-2xl md:text-3xl p-2 rounded-md w-12 h-12 md:w-14 md:h-14 flex items-center justify-center shadow-lg font-mario">
       {value.toString().padStart(2, '0')}
     </div>
-    <span className="text-sm font-bold mt-2 bg-black text-white px-2 py-1">{label}</span>
+    <span className="text-xs font-mario mt-1 text-black">{label}</span>
   </div>
 );
 

@@ -1,4 +1,6 @@
 
+import { Instagram, Mail } from 'lucide-react';
+
 const Footer = () => {
   return (
     <footer className="bg-[#1e1e42] text-white py-12">
@@ -23,11 +25,16 @@ const Footer = () => {
           
           <div>
             <h3 className="font-mario text-lg mb-4">Connect With Us</h3>
-            <p className="text-gray-300 mb-2">Email: contact@rasieeesop.com</p>
+            <p className="text-gray-300 mb-4">Email: contact@rasieeesop.com</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Twitter</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">LinkedIn</a>
+              <a href="#" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                <Instagram size={20} />
+                <span>Instagram</span>
+              </a>
+              <a href="mailto:contact@rasieeesop.com" className="text-gray-300 hover:text-white transition-colors flex items-center gap-2">
+                <Mail size={20} />
+                <span>Email</span>
+              </a>
             </div>
           </div>
         </div>
