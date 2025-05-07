@@ -32,17 +32,17 @@ const Header = () => {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex items-center ml-auto space-x-8">
-            <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'})}} className="text-white hover:text-yellow-200 transition-colors text-lg">HOME</a>
-            <a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'})}} className="text-white hover:text-yellow-200 transition-colors text-lg">MISSION</a>
-            <a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'})}} className="text-white hover:text-yellow-200 transition-colors text-lg">POWERUPS</a>
-            <a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'})}} className="text-white hover:text-yellow-200 transition-colors text-lg">SCHEDULE</a>
-            <a href="#leaderboard" onClick={(e) => {e.preventDefault(); document.getElementById('leaderboard')?.scrollIntoView({behavior: 'smooth'})}} className="text-white hover:text-yellow-200 transition-colors text-lg">LEADERBOARD</a>
-            <a href="#why-join" onClick={(e) => {e.preventDefault(); document.getElementById('why-join')?.scrollIntoView({behavior: 'smooth'})}} className="text-white hover:text-yellow-200 transition-colors text-lg">WHY JOIN</a>
+            <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">HOME</a>
+            <a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">MISSION</a>
+            <a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">POWERUPS</a>
+            <a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">SCHEDULE</a>
+            <a href="#leaderboard" onClick={(e) => {e.preventDefault(); document.getElementById('leaderboard')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">LEADERBOARD</a>
+            <Link to="/highlights" className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">HIGHLIGHTS</Link>
             <a 
               href="https://unstop.com" 
               target="_blank" 
               rel="noreferrer"
-              className="bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
+              className="font-mario bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
             >
               REGISTER NOW
             </a>
@@ -53,17 +53,17 @@ const Header = () => {
         {isOpen && (
           <nav className="md:hidden py-4 bg-[#8e44ad] rounded-b-lg">
             <div className="flex flex-col space-y-4 items-center">
-              <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); setIsOpen(false);}} className="text-white hover:text-yellow-200 w-full text-center py-2">HOME</a>
-              <a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="text-white hover:text-yellow-200 w-full text-center py-2">MISSION</a>
-              <a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="text-white hover:text-yellow-200 w-full text-center py-2">POWERUPS</a>
-              <a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="text-white hover:text-yellow-200 w-full text-center py-2">SCHEDULE</a>
-              <a href="#leaderboard" onClick={(e) => {e.preventDefault(); document.getElementById('leaderboard')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="text-white hover:text-yellow-200 w-full text-center py-2">LEADERBOARD</a>
-              <a href="#why-join" onClick={(e) => {e.preventDefault(); document.getElementById('why-join')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="text-white hover:text-yellow-200 w-full text-center py-2">WHY JOIN</a>
+              <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'}); setIsOpen(false);}} className="font-mario text-white hover:text-yellow-200 w-full text-center py-2 text-shadow-mario">HOME</a>
+              <a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="font-mario text-white hover:text-yellow-200 w-full text-center py-2 text-shadow-mario">MISSION</a>
+              <a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="font-mario text-white hover:text-yellow-200 w-full text-center py-2 text-shadow-mario">POWERUPS</a>
+              <a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="font-mario text-white hover:text-yellow-200 w-full text-center py-2 text-shadow-mario">SCHEDULE</a>
+              <a href="#leaderboard" onClick={(e) => {e.preventDefault(); document.getElementById('leaderboard')?.scrollIntoView({behavior: 'smooth'}); setIsOpen(false);}} className="font-mario text-white hover:text-yellow-200 w-full text-center py-2 text-shadow-mario">LEADERBOARD</a>
+              <Link to="/highlights" onClick={() => setIsOpen(false)} className="font-mario text-white hover:text-yellow-200 w-full text-center py-2 text-shadow-mario">HIGHLIGHTS</Link>
               <a 
                 href="https://unstop.com" 
                 target="_blank" 
                 rel="noreferrer"
-                className="bg-white text-[#ff3e3e] px-6 py-2 rounded-lg hover:bg-yellow-200 transition-colors mb-2"
+                className="font-mario bg-white text-[#ff3e3e] px-6 py-2 rounded-lg hover:bg-yellow-200 transition-colors mb-2"
                 onClick={() => setIsOpen(false)}
               >
                 REGISTER NOW
