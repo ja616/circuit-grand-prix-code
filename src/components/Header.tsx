@@ -28,14 +28,14 @@ const Header = () => {
       return isHome ? (
         <button
           onClick={() => scrollToSection(to.substring(1))}
-          className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario"
+          className="font-mario text-white hover:text-yellow-200 transition-colors text-sm"
         >
           {label}
         </button>
       ) : (
         <Link
           to="/"
-          className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario"
+          className="font-mario text-white hover:text-yellow-200 transition-colors text-sm"
         >
           {label}
         </Link>
@@ -44,7 +44,7 @@ const Header = () => {
     return (
       <Link
         to={to}
-        className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario"
+        className="font-mario text-white hover:text-yellow-200 transition-colors text-sm"
       >
         {label}
       </Link>
@@ -54,22 +54,22 @@ const Header = () => {
   return (
     <header className="bg-gradient-to-r from-[#8e44ad] to-[#ff3e3e] text-white sticky top-0 z-50 py-4">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Larger Logo on Left */}
+        {/* Logo aligned to the left with larger space */}
         <Link to="/" className="flex items-center">
           <img
             src="/lovable-uploads/275d2a89-16d4-4c5f-81d6-c0b6f9f1f9e7.png"
             alt="SOP Logo"
-            className="h-32" // Increased logo size
+            className="h-16" // Adjusted logo size
           />
         </Link>
 
-        {/* Spacer with more space */}
-        <div className="flex-grow"></div> {/* Pushes the nav to the right */}
+        {/* Spacer with more space between logo and nav */}
+        <div className="flex-grow"></div> {/* Added flexible space */}
 
-        {/* Navigation with increased spacing between HOME and MISSION */}
-        <nav className="hidden md:flex items-center space-x-12"> {/* Increased space between items */}
-          {navItems.map((item, index) => (
-            <div key={item.label} className={index === 0 ? 'mr-16' : ''}> {/* Increased margin on HOME */}
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-8"> {/* Adjusted spacing */}
+          {navItems.map((item) => (
+            <div key={item.label}>
               {renderLink(item)}
             </div>
           ))}
@@ -77,7 +77,7 @@ const Header = () => {
             href="https://unstop.com"
             target="_blank"
             rel="noreferrer"
-            className="font-mario bg-white text-[#ff3e3e] px-6 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
+            className="font-mario bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-sm font-bold"
           >
             REGISTER
           </a>
