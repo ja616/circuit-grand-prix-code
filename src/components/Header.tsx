@@ -59,7 +59,7 @@ const Header = () => {
           <img
             src="/lovable-uploads/275d2a89-16d4-4c5f-81d6-c0b6f9f1f9e7.png"
             alt="SOP Logo"
-            className="h-20" // Larger logo
+            className="h-24" // Larger logo size
           />
         </Link>
 
@@ -76,7 +76,7 @@ const Header = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8"> {/* Increased gap */}
+        <nav className="hidden md:flex items-center space-x-4"> {/* Reduced gap between items */}
           {navItems.map((item) => (
             <div key={item.label}>{renderLink(item)}</div>
           ))}
@@ -117,5 +117,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
