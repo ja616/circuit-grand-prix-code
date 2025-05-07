@@ -6,20 +6,20 @@ const HeroBanner = () => {
 
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image - moderately shifted right */}
+      {/* Background image - shifted further right and up */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
           backgroundImage: 'url("/lovable-uploads/e773b7dc-1c82-463d-be0d-13a43cc2ef67.png")',
           backgroundSize: 'cover',
-          backgroundPosition: '70% 30%'  // Slight right shift
+          backgroundPosition: '70% 0%'  // Shift image up
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
 
-      {/* Content positioned upward */}
-      <div className="container mx-auto px-4 relative z-20 text-center py-6 flex flex-col items-center -mt-24">
+      {/* Content shifted further up */}
+      <div className="container mx-auto px-4 relative z-20 text-center py-6 flex flex-col items-center -mt-40">
         <h1 className="text-white text-base md:text-xl lg:text-3xl font-mario mb-3 text-shadow-mario">
           START YOUR ENGINES!
         </h1>
