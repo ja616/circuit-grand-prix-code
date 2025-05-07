@@ -86,7 +86,7 @@ const Header = () => {
             rel="noreferrer"
             className="font-mario bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
           >
-            REGISTER NOW
+            REGISTER
           </a>
         </nav>
       </div>
