@@ -118,4 +118,8 @@
     @apply inline-flex items-center justify-center rounded-full px-4 py-1 
            bg-mk-purple text-white font-bold text-xs shadow-md;
   }
+  
+  .text-shadow-mario {
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+  }
 }

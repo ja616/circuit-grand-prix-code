@@ -12,7 +12,7 @@ const HeroBanner = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: 'url("/lovable-uploads/dff05475-41e4-4907-b45a-eecdb3b6b471.png")',
+          backgroundImage: 'url("/lovable-uploads/e773b7dc-1c82-463d-be0d-13a43cc2ef67.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -21,15 +21,15 @@ const HeroBanner = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-20 text-center py-16 flex flex-col items-center">
-        <h1 className="text-white text-2xl md:text-4xl lg:text-5xl font-bold mb-6">
-          Start your engines! Welcome to the future of technology
+        <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-mario mb-6 text-shadow-mario">
+          Start your engines!
         </h1>
         
-        <div className="my-12">
+        <div className="my-6 scale-75 md:scale-90">
           <CountdownTimer targetDate={eventDate} />
         </div>
         
-        <div className="flex flex-wrap justify-center gap-4 mt-10">
+        <div className="flex flex-wrap justify-center gap-4 mt-6">
           <a 
             href="https://unstop.com" 
             target="_blank" 
