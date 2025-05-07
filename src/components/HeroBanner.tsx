@@ -21,8 +21,8 @@ const HeroBanner = () => {
       </div>
       
       <div className="container mx-auto px-4 relative z-20 text-center py-16 flex flex-col items-center">
-        <h1 className="text-black text-2xl md:text-4xl lg:text-5xl font-mario mb-6 text-shadow-mario">
-          Start your engines!
+        <h1 className="text-white text-2xl md:text-4xl lg:text-6xl font-mario mb-6 text-shadow-mario">
+          START YOUR ENGINES!
         </h1>
         
         <div className="my-6 scale-75 md:scale-90">

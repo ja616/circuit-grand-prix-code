@@ -3,11 +3,11 @@ import { CircleCheck } from 'lucide-react';
 
 const MissionSection = () => {
   return (
-    <section className="py-16 bg-[#f5e6ff] relative">
+    <section className="py-16 bg-gradient-to-b from-[#9b87f5]/30 to-[#ff3e3e]/20 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-[#d33fa6] text-3xl md:text-4xl font-bold uppercase">Mission Mode: Robotics<br/>Grand Tour</h2>
-          <p className="text-lg mt-4 text-gray-700">
+          <h2 className="text-[#ff3e3e] text-3xl md:text-4xl font-mario uppercase text-shadow-mario">Mission Mode: Robotics<br/>Grand Tour</h2>
+          <p className="text-lg mt-4 text-gray-700 font-racing">
             "Make your bot. Complete the missions. Unlock every skill. Become the ultimate Robotics Grandmaster!"
           </p>
         </div>
@@ -58,11 +58,11 @@ const MissionCard = ({
   skills
 }: MissionCardProps) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 border-2 border-gray-200 flex flex-col justify-between">
+    <div className="bg-white rounded-lg shadow-md p-6 border-2 border-[#ff3e3e] hover:border-[#9b87f5] transition-colors flex flex-col justify-between transform hover:-translate-y-1 hover:shadow-xl duration-300">
       <div>
         <div className="text-4xl mb-4">{iconEmoji}</div>
-        <h3 className="text-xl font-bold text-[#d33fa6] mb-2">{title}</h3>
-        <p className="italic text-lg mb-4">"{tagline}"</p>
+        <h3 className="text-xl font-racing text-[#ff3e3e] mb-2">{title}</h3>
+        <p className="italic text-lg mb-4 font-racing">"{tagline}"</p>
         <p className="text-gray-700 mb-4">{description}</p>
         
         <div className="mb-4">
@@ -70,8 +70,8 @@ const MissionCard = ({
           <ul className="space-y-2">
             {skills.map((skill, index) => (
               <li key={index} className="flex items-center">
-                <CircleCheck size={18} className="text-[#d33fa6] mr-2" />
-                <span>{skill}</span>
+                <CircleCheck size={18} className="text-[#9b87f5] mr-2" />
+                <span className="font-racing">{skill}</span>
               </li>
             ))}
           </ul>
