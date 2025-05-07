@@ -10,7 +10,7 @@ const HeroBanner = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
-          backgroundImage: 'url("/lovable-uploads/Screenshot%202025-05-07%20235246.png")',
+          backgroundImage: 'url("/lovable-uploads/Screenshot_235246.png")',
           backgroundSize: 'cover',
           backgroundPosition: '50% 40%'  // Shift image up
         }}
