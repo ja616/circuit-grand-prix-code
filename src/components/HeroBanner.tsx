@@ -6,49 +6,44 @@ const HeroBanner = () => {
 
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background image */}
+      {/* Background image shifted right */}
       <div 
         className="absolute inset-0 bg-cover bg-center z-0" 
         style={{ 
           backgroundImage: 'url("/lovable-uploads/e773b7dc-1c82-463d-be0d-13a43cc2ef67.png")',
           backgroundSize: 'cover',
-          backgroundPosition:'center -70px'
-
+          backgroundPosition: 'right -60px top'  // shifted right
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
 
-      {/* Foreground content */}
-     <div className="container mx-auto px-4 relative z-20 text-center py-6 flex flex-col items-center -mt-8">
-
-        {/* Even smaller heading */}
-        <h1 className="text-white text-base md:text-xl lg:text-2xl font-mario mb-2 text-shadow-mario">
+      {/* Content moved way up */}
+      <div className="container mx-auto px-4 relative z-20 text-center py-6 flex flex-col items-center -mt-32">
+        <h1 className="text-white text-base md:text-xl lg:text-3xl font-mario mb-3 text-shadow-mario">
           START YOUR ENGINES!
         </h1>
 
-        {/* Countdown */}
         <div className="my-2 scale-90">
           <CountdownTimer targetDate={eventDate} />
         </div>
 
-        {/* Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mt-2">
+        <div className="flex flex-wrap justify-center gap-3 mt-3">
           <a 
             href="https://unstop.com" 
             target="_blank" 
             rel="noreferrer"
-            className="bg-[#ff3e3e] text-white px-4 py-2 rounded-lg hover:brightness-110 transition-all font-bold text-sm"
+            className="bg-[#ff3e3e] text-white px-5 py-2.5 rounded-lg hover:brightness-110 transition-all font-bold text-base"
           >
             REGISTER NOW 
-            <ArrowRight className="inline ml-2" size={16} />
+            <ArrowRight className="inline ml-2" size={18} />
           </a>
           
           <a 
             href="https://docs.google.com/document/d/your-brochure-id" 
             target="_blank" 
             rel="noreferrer"
-            className="bg-white text-[#8e44ad] px-4 py-2 rounded-lg hover:brightness-95 transition-all font-bold text-sm"
+            className="bg-white text-[#8e44ad] px-5 py-2.5 rounded-lg hover:brightness-95 transition-all font-bold text-base"
           >
             ABOUT
           </a>
