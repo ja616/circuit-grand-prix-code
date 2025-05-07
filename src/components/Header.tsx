@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -31,18 +30,18 @@ const Header = () => {
           </button>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center ml-auto space-x-8">
-            <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">HOME</a>
-            <a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">MISSION</a>
-            <a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">POWERUPS</a>
-            <a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">SCHEDULE</a>
-            <a href="#leaderboard" onClick={(e) => {e.preventDefault(); document.getElementById('leaderboard')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">LEADERBOARD</a>
-            <Link to="/highlights" className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario">HIGHLIGHTS</Link>
+          <nav className="hidden md:flex items-center ml-8 space-x-6"> {/* Reduced space-x-8 to space-x-6 */}
+            <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">HOME</a> {/* Reduced text size to text-base */}
+            <a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">MISSION</a>
+            <a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">POWERUPS</a>
+            <a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">SCHEDULE</a>
+            <a href="#leaderboard" onClick={(e) => {e.preventDefault(); document.getElementById('leaderboard')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">LEADERBOARD</a>
+            <Link to="/highlights" className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">HIGHLIGHTS</Link>
             <a 
               href="https://unstop.com" 
               target="_blank" 
               rel="noreferrer"
-              className="font-mario bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
+              className="font-mario bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-base font-bold"
             >
               REGISTER NOW
             </a>
