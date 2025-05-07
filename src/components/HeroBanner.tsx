@@ -12,7 +12,7 @@ const HeroBanner = () => {
         style={{ 
           backgroundImage: 'url("/lovable-uploads/e773b7dc-1c82-463d-be0d-13a43cc2ef67.png")',
           backgroundSize: 'cover',
-          backgroundPosition:'center -40px'
+          backgroundPosition:'center -70px'
 
         }}
       >
@@ -20,7 +20,8 @@ const HeroBanner = () => {
       </div>
 
       {/* Foreground content */}
-      <div className="container mx-auto px-4 relative z-20 text-center -mt-20 flex flex-col items-center">
+     <div className="container mx-auto px-4 relative z-20 text-center py-6 flex flex-col items-center -mt-8">
+
         {/* Even smaller heading */}
         <h1 className="text-white text-base md:text-xl lg:text-2xl font-mario mb-2 text-shadow-mario">
           START YOUR ENGINES!
