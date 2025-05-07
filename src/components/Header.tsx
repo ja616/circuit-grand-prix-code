@@ -63,6 +63,9 @@ const Header = () => {
           />
         </Link>
 
+        {/* Spacer */}
+        <div className="flex-grow"></div>
+
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -73,7 +76,7 @@ const Header = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
+        <nav className="hidden md:flex items-center space-x-10"> {/* Increased gap */}
           {navItems.map((item) => (
             <div key={item.label}>{renderLink(item)}</div>
           ))}
@@ -83,7 +86,7 @@ const Header = () => {
             rel="noreferrer"
             className="font-mario bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
           >
-            REGISTER NOW
+            REGISTER
           </a>
         </nav>
       </div>
@@ -114,3 +117,4 @@ const Header = () => {
 };
 
 export default Header;
+
