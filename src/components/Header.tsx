@@ -63,8 +63,8 @@ const Header = () => {
           />
         </Link>
 
-        {/* Spacer */}
-        <div className="flex-grow"></div>
+        {/* Spacer with more space */}
+        <div className="flex-grow-2"></div> {/* Increased gap between logo and navigation */}
 
         {/* Mobile Menu Button */}
         <button
@@ -117,3 +117,4 @@ const Header = () => {
 };
 
 export default Header;
+
