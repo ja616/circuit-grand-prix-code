@@ -19,7 +19,7 @@ const HeroBanner = () => {
       </div>
 
       {/* Content moved right using margin-left */}
-      <div className="container mx-auto px-4 relative z-20 text-center py-6 flex flex-col items-center -mt-40 ml-50">
+      <div className="container mx-auto px-4 relative z-20 text-center py-6 flex flex-col items-center -mt-40 ml-80">
         <h1 className="text-white text-base md:text-xl lg:text-3xl font-mario mb-3 text-shadow-mario">
           START YOUR ENGINES!
         </h1>
