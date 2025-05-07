@@ -66,6 +66,16 @@ const Header = () => {
         {/* Spacer with more space */}
         <div className="flex-grow"></div> {/* Increased gap between logo and navigation */}
 
+        {/* Home Link with extra margin to push it more to the right */}
+        <div className="ml-12">
+          <Link
+            to="/"
+            className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario"
+          >
+            HOME
+          </Link>
+        </div>
+
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -77,7 +87,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-10"> {/* Increased gap between items */}
-          {navItems.map((item) => (
+          {navItems.slice(1).map((item) => (
             <div key={item.label}>{renderLink(item)}</div>
           ))}
           <a
