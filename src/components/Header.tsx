@@ -54,7 +54,7 @@ const Header = () => {
   return (
     <header className="bg-gradient-to-r from-[#8e44ad] to-[#ff3e3e] text-white sticky top-0 z-50 py-4">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-        {/* Large Logo on Left */}
+        {/* Logo on Left */}
         <Link to="/" className="flex items-center">
           <img
             src="/lovable-uploads/275d2a89-16d4-4c5f-81d6-c0b6f9f1f9e7.png"
@@ -64,7 +64,7 @@ const Header = () => {
         </Link>
 
         {/* Spacer with more space */}
-        <div className="flex-grow-4"></div> {/* Increased gap between logo and navigation */}
+        <div className="flex-grow"></div> {/* Increased gap between logo and navigation */}
 
         {/* Mobile Menu Button */}
         <button
@@ -76,7 +76,7 @@ const Header = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-4"> {/* Reduced gap between items */}
+        <nav className="hidden md:flex items-center space-x-10"> {/* Increased gap between items */}
           {navItems.map((item) => (
             <div key={item.label}>{renderLink(item)}</div>
           ))}
@@ -84,7 +84,7 @@ const Header = () => {
             href="https://unstop.com"
             target="_blank"
             rel="noreferrer"
-            className="font-mario bg-white text-[#ff3e3e] px-4 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
+            className="font-mario bg-white text-[#ff3e3e] px-6 py-2 rounded-lg hover:bg-yellow-200 transition-colors text-lg font-bold"
           >
             REGISTER
           </a>
