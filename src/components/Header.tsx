@@ -64,10 +64,10 @@ const Header = () => {
         </Link>
 
         {/* Spacer with more space */}
-        <div className="flex-grow"></div> {/* Increased gap between logo and navigation */}
+        <div className="flex-grow"></div> {/* This space pushes the nav to the right */}
 
-        {/* Home Link with extra margin to push it more to the right */}
-        <div className="ml-12">
+        {/* HOME Link with increased right margin */}
+        <div className="ml-16"> {/* Increased margin to push HOME further right */}
           <Link
             to="/"
             className="font-mario text-white hover:text-yellow-200 transition-colors text-lg text-shadow-mario"
@@ -86,7 +86,7 @@ const Header = () => {
         </button>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10"> {/* Increased gap between items */}
+        <nav className="hidden md:flex items-center space-x-10"> {/* Added some spacing between items */}
           {navItems.slice(1).map((item) => (
             <div key={item.label}>{renderLink(item)}</div>
           ))}
