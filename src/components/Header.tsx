@@ -11,9 +11,10 @@ const Header = () => {
 
   return (
     <header className="bg-gradient-to-r from-[#8e44ad] to-[#ff3e3e] text-white sticky top-0 z-50 py-4">
-      <div className="container mx-auto">
-        <div className="flex items-center justify-between px-4">
-          <Link to="/" className="flex items-center">
+      <div className="max-w-screen-xl mx-auto px-4"> {/* Reduced left-right padding for tighter layout */}
+        <div className="flex items-center justify-between">
+          {/* Logo on the right */}
+          <Link to="/" className="flex items-center ml-auto">
             <img 
               src="/lovable-uploads/275d2a89-16d4-4c5f-81d6-c0b6f9f1f9e7.png" 
               alt="SOP Logo" 
@@ -29,9 +30,9 @@ const Header = () => {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          {/* Desktop navigation */}
-          <nav className="hidden md:flex items-center ml-8 space-x-6"> {/* Reduced space-x-8 to space-x-6 */}
-            <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">HOME</a> {/* Reduced text size to text-base */}
+          {/* Desktop navigation (aligned left) */}
+          <nav className="hidden md:flex items-center space-x-8"> {/* Removed margin from left */}
+            <a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">HOME</a>
             <a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">MISSION</a>
             <a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">POWERUPS</a>
             <a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'})}} className="font-mario text-white hover:text-yellow-200 transition-colors text-base text-shadow-mario">SCHEDULE</a>
