@@ -64,7 +64,7 @@ const Header = () => {
         </Link>
 
         {/* Spacer with more space */}
-        <div className="flex-grow-2"></div> {/* Increased gap between logo and navigation */}
+        <div className="flex-grow-4"></div> {/* Increased gap between logo and navigation */}
 
         {/* Mobile Menu Button */}
         <button
@@ -107,7 +107,7 @@ const Header = () => {
               className="font-mario bg-white text-[#ff3e3e] px-6 py-2 rounded-lg hover:bg-yellow-200 transition-colors mb-2"
               onClick={() => setIsOpen(false)}
             >
-              REGISTER NOW
+              REGISTER
             </a>
           </div>
         </nav>
