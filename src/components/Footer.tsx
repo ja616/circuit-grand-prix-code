@@ -14,10 +14,11 @@ const Footer = () => {
           <div>
             <h3 className="font-mario text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/" className="text-gray-300 hover:text-white transition-colors">Home</a></li>
-              <li><a href="#schedule" className="text-gray-300 hover:text-white transition-colors">Schedule</a></li>
-              <li><a href="#mission" className="text-gray-300 hover:text-white transition-colors">Tracks</a></li>
-              <li><a href="#leaderboard" className="text-gray-300 hover:text-white transition-colors">Leaderboard</a></li>
+              <li><a href="#" onClick={(e) => {e.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'})}} className="text-gray-300 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#mission" onClick={(e) => {e.preventDefault(); document.getElementById('mission')?.scrollIntoView({behavior: 'smooth'})}} className="text-gray-300 hover:text-white transition-colors">Mission</a></li>
+              <li><a href="#powerups" onClick={(e) => {e.preventDefault(); document.getElementById('powerups')?.scrollIntoView({behavior: 'smooth'})}} className="text-gray-300 hover:text-white transition-colors">PowerUps</a></li>
+              <li><a href="#schedule" onClick={(e) => {e.preventDefault(); document.getElementById('schedule')?.scrollIntoView({behavior: 'smooth'})}} className="text-gray-300 hover:text-white transition-colors">Schedule</a></li>
+              <li><a href="#leaderboard" onClick={(e) => {e.preventDefault(); document.getElementById('leaderboard')?.scrollIntoView({behavior: 'smooth'})}} className="text-gray-300 hover:text-white transition-colors">Leaderboard</a></li>
             </ul>
           </div>
           
@@ -25,9 +26,7 @@ const Footer = () => {
             <h3 className="font-mario text-lg mb-4">Connect With Us</h3>
             <p className="text-gray-300 mb-2">Email: contact@rasieeesop.com</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">Twitter</a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">LinkedIn</a>
             </div>
           </div>
         </div>

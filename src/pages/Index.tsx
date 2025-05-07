@@ -15,11 +15,11 @@ const Index = () => {
       <Header />
       <main>
         <HeroBanner />
-        <MissionSection />
-        <PowerUpsSection />
-        <ScheduleSection />
-        <LeaderboardSection />
-        <WhyJoinSection />
+        <div id="mission"><MissionSection /></div>
+        <div id="powerups"><PowerUpsSection /></div>
+        <div id="schedule"><ScheduleSection /></div>
+        <div id="leaderboard"><LeaderboardSection /></div>
+        <div id="why-join"><WhyJoinSection /></div>
         <SponsorsSection />
       </main>
       <Footer />
