@@ -1,9 +1,7 @@
-
 import CountdownTimer from './CountdownTimer';
 import { ArrowRight } from 'lucide-react';
 
 const HeroBanner = () => {
-  // Set this to your event date
   const eventDate = '2025-05-17T09:00:00';
 
   return (
@@ -14,22 +12,24 @@ const HeroBanner = () => {
         style={{ 
           backgroundImage: 'url("/lovable-uploads/e773b7dc-1c82-463d-be0d-13a43cc2ef67.png")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center top'  // Shift background image up
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-20 text-center py-16 flex flex-col items-center">
-        <h1 className="text-white text-2xl md:text-4xl lg:text-6xl font-mario mb-6 text-shadow-mario">
+      <div className="container mx-auto px-4 relative z-20 text-center py-8 md:py-12 flex flex-col items-center">
+        {/* Smaller heading */}
+        <h1 className="text-white text-xl md:text-3xl lg:text-5xl font-mario mb-4 text-shadow-mario">
           START YOUR ENGINES!
         </h1>
         
-        <div className="my-6 scale-75 md:scale-90">
+        <div className="my-4 scale-90">
           <CountdownTimer targetDate={eventDate} />
         </div>
         
-        <div className="flex flex-wrap justify-center gap-4 mt-6">
+        {/* Buttons moved up by reducing mt */}
+        <div className="flex flex-wrap justify-center gap-4 mt-4">
           <a 
             href="https://unstop.com" 
             target="_blank" 
