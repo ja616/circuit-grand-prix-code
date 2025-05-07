@@ -6,7 +6,7 @@ const MissionSection = () => {
     <section className="py-16 bg-gradient-to-b from-[#9b87f5]/30 to-[#ff3e3e]/20 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-[#ff3e3e] text-3xl md:text-4xl font-mario uppercase text-shadow-mario">Mission Mode: Robotics<br/>Grand Tour</h2>
+          <h2 className="text-[#ff3e3e] text-3xl md:text-4xl font-mario uppercase text-shadow-mario">Mission Mode:<br/>Robotics Grand Tour</h2>
           <p className="text-lg mt-4 text-gray-700 font-racing">
             "Make your bot. Complete the missions. Unlock every skill. Become the ultimate Robotics Grandmaster!"
           </p>
